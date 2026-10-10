@@ -117,8 +117,8 @@ ok('订阅人数末值 = 533', subs.points[subs.points.length - 1].num === 533, 
 ok('订阅档位解析', us.subscribeGears.length === 3, us.subscribeGears);
 
 /* ---------------- 组装工作表 ---------------- */
-console.log('-- 工作表组装（默认全部区间）--');
-const sheets = Extract.buildSheets({ stagePayload: stage, userPayload: user, listPayload: list });
+console.log('-- 分表模式：工作表组装（全部区间）--');
+const sheets = Extract.buildSheets({ stagePayload: stage, userPayload: user, listPayload: list, mode: 'multi' });
 const names = sheets.map((s) => s.name);
 console.log('   工作表：' + names.join('、'));
 ['数据概况', '关卡基础数据', '页面指标一览', '关卡指标汇总',
@@ -162,8 +162,8 @@ ok('人数表也含三套区间', Array.from(new Set(cnt.rows.map((r) => r[0])))
 
 /* ---------------- 用户新要求：可选择导出区间 ---------------- */
 console.log('-- 导出区间选择（近7日 / 近30日 / 全部）--');
-const s30 = Extract.buildSheets({ stagePayload: stage, userPayload: user, range: 30 });
-const s7 = Extract.buildSheets({ stagePayload: stage, userPayload: user, range: 7 });
+const s30 = Extract.buildSheets({ stagePayload: stage, userPayload: user, range: 30, mode: 'multi' });
+const s7 = Extract.buildSheets({ stagePayload: stage, userPayload: user, range: 7, mode: 'multi' });
 const heat30 = s30.find((s) => s.name === '奇域热度');
 const heat7 = s7.find((s) => s.name === '奇域热度');
 ok('近30日：热度趋势 30 行', heat30.rows.length === 30, heat30.rows.length);
@@ -179,6 +179,54 @@ ok('近7日 奇域热度变化 = 117（官方口径）', h7row && h7row[4] === 1
 ok('区间变化标注来源', h7row && ['官方接口', '按每日数据计算'].includes(h7row[5]), h7row);
 ok('分布表两区间都一样（接口固定返回 30 天分布）',
   s7.find((s) => s.name === '单局游玩时长分布').rows.length === s30.find((s) => s.name === '单局游玩时长分布').rows.length);
+
+/* ---------------- 用户新要求：单表模式（按日期合并成一张大表） ---------------- */
+console.log('-- 单表模式（按日期合并）--');
+const single = Extract.buildSheets({ stagePayload: stage, userPayload: user, range: 30, mode: 'sheet', group: '0' });
+const singleNames = single.map((s) => s.name);
+ok('单表模式分为：概况 + 数据总表 + 评论内容 + 说明', single.length === 4, singleNames);
+const big = single.find((s) => /数据总表/.test(s.name));
+ok('生成「数据总表」', !!big, singleNames);
+ok('表名带奇域名', big.name.indexOf('尘世执政录') === 0, big.name);
+ok('一行为一天（30 天 = 30 行）', big.rows.length === 30, big.rows.length);
+ok('首列是奇域名称，第二列是日期', big.header[0] === '奇域名称' && big.header[1] === '日期', big.header.slice(0, 2));
+ok('奇域热度在表内', big.header.indexOf('奇域热度') > 0, big.header);
+ok('平均游玩时长同时给秒与可读值', big.header.includes('平均游玩时长(秒)') && big.header.includes('平均游玩时长(秒)(可读)'), big.header);
+ok('评论数与封面点击率在表内', big.header.includes('评论数') && big.header.includes('封面点击率(%)'), big.header);
+ok('分布占比列按所选区间组（常规 5 列）',
+  ['≤1分钟 占比(%)', '1-3分钟 占比(%)', '3-5分钟 占比(%)', '5-7分钟 占比(%)', '>7分钟 占比(%)'].every((h) => big.header.includes(h)), big.header);
+ok('默认不含长区间列（未选该组）', !big.header.includes('≤3分钟 占比(%)'), big.header);
+ok('同一天的指标落在同一行（热度 505 与时长 323 同行）', (() => {
+  const r = big.rows.find((x) => x[big.header.indexOf('日期')] === '2026-10-09');
+  if (!r) return false;
+  const heat = r[big.header.indexOf('奇域热度')];
+  const dur = r[big.header.indexOf('平均游玩时长(秒)')];
+  const durText = r[big.header.indexOf('平均游玩时长(秒)(可读)')];
+  return heat === 505 && dur === 323 && durText === '5分23秒';
+})(), big.rows[big.rows.length - 1]);
+ok('列名无重复', new Set(big.header).size === big.header.length, big.header.length + ' vs ' + new Set(big.header).size);
+ok('分布占比合计约 100%', (() => {
+  const i0 = big.header.indexOf('≤1分钟 占比(%)');
+  const row = big.rows.find((r) => typeof r[i0] === 'number' && r[i0] > 0);
+  if (!row) return false;
+  const sum = big.header.map((h, i) => (/占比\(%\)$/.test(h) ? row[i] : 0)).reduce((a, b) => a + (typeof b === 'number' ? b : 0), 0);
+  return Math.abs(sum - 100) < 0.5;
+})());
+
+const bigGroup1 = Extract.buildSheets({ stagePayload: stage, userPayload: user, range: 30, mode: 'sheet', group: '1' }).find((s) => /数据总表/.test(s.name));
+ok('切换区间组 -> 换成该组列', bigGroup1 && bigGroup1.header.includes('≤3分钟 占比(%)') && !bigGroup1.header.includes('≤1分钟 占比(%)'),
+  bigGroup1 && bigGroup1.header.filter((h) => /分钟 占比/.test(h)));
+const big7 = Extract.buildSheets({ stagePayload: stage, userPayload: user, range: 7, mode: 'sheet', group: '0' }).find((s) => /数据总表/.test(s.name));
+ok('单表模式也支持区间（近7日 = 7 行）', big7.rows.length === 7, big7.rows.length);
+ok('单表模式仍保留评论内容表',
+  single.some((s) => s.name === '评论内容' && s.rows.length === 5), singleNames);
+ok('数据说明写明单表口径',
+  single.find((s) => s.name === '数据说明').rows.some((r) => /单表/.test(String(r[1]))), '');
+
+console.log('-- 分表模式回归 --');
+const multi = Extract.buildSheets({ stagePayload: stage, userPayload: user, range: 30, mode: 'multi' });
+ok('分表模式工作表数量明显更多', multi.length > 12, multi.length);
+ok('分表模式含各趋势表', ['奇域热度', '平均游玩时长', '评论内容'].every((n) => multi.some((s) => s.name === n)), multi.map((s) => s.name));
 
 const ov = sheets.find((s) => s.name === '数据概况');
 ok('概况含奇域名与ID', ov.rows.some((r) => r[0] === '奇域名称' && r[1] === '尘世执政录') &&

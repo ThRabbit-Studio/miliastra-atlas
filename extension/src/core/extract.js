@@ -486,13 +486,21 @@
   }
 
   /** 数据说明：口径、有效期、异常，避免用户看不懂数字怎么来的 */
-  function notesSheet(stage, user, range) {
+  function notesSheet(stage, user, range, mode, group) {
     var rows = [['说明项', '内容']];
     function add(k, v) { rows.push([k, MHY.toText(v)]); }
     add('数据来源', '米游社千星奇域创作者中心官方数据接口（与页面显示一致）');
     add('数据日期', (stage && stage.todayStr) || (user && user.todayStr) || '');
     add('更新频率', '每天 6:00 更新昨日数据');
     add('导出区间', range ? ('近 ' + range + ' 日（可在面板切换近7日 / 近30日 / 全部）') : '接口返回的全部天数（近 30 天）');
+    add('导出模式', mode === 'sheet'
+      ? '单表：所有指标按「日期」合并成一张大表，同一天的各指标在同一行，便于筛选 / 透视 / 画图'
+      : '分表：按主题拆成多张工作表，便于逐项查看');
+    if (mode === 'sheet') {
+      var groupNames = { '0': '常规区间（≤1/1-3/3-5/5-7/>7 分钟）', '1': '长区间（≤3/3-6/6-9/9-12/>12 分钟）', '2': '超长区间（≤6/6-13/13-19/19-26/>26 分钟）' };
+      add('时长分布区间', groupNames[String(group === undefined ? '0' : group)] || '常规区间');
+      add('列合并口径', '同名指标跨系列按日期对齐；接口未返回当日有效值的单元格留空');
+    }
     if (stage) {
       add('平均值口径', '「平均游玩时长」为当日所有游玩记录的平均值');
       add('比率口径', '「平均推荐率」「封面点击率」以百分比表示，接口原始值已除以 100');
@@ -579,14 +587,158 @@
   }
 
   /**
+   * 单表模式：把所有指标按日期合并成一张大表。
+   * 主干用「接口返回的每日序列」（不受页面 7日/30日 图表的显示范围限制），
+   * 因此同一天的奇域热度、时长、评论数、点击率、时长分布占比会落在同一行。
+   */
+  function buildSingleSheet(stage, user, range, groupIndex) {
+    var allSeries = [];
+    if (stage) allSeries = allSeries.concat(stage.series);
+    if (user) allSeries = allSeries.concat(user.series);
+    if (!allSeries.length) return null;
+
+    function hasData(arr) {
+      for (var i = 0; i < arr.length; i++) {
+        if (arr[i] !== '' && arr[i] !== null && arr[i] !== undefined) return true;
+      }
+      return false;
+    }
+
+    // 日期并集（已按所选区间裁剪）
+    var dateSet = Object.create(null);
+    var dateOrder = [];
+    allSeries.forEach(function (s) {
+      (s.points || []).forEach(function (p) {
+        if (!p.date || dateSet[p.date]) return;
+        dateSet[p.date] = true;
+        dateOrder.push(p.date);
+      });
+    });
+    dateOrder.sort();
+
+    // 每个序列 -> { 日期: 数值 }
+    var byType = Object.create(null);
+    allSeries.forEach(function (s) {
+      var m = Object.create(null);
+      (s.points || []).forEach(function (p) {
+        m[p.date] = (p.invalid || p.num === null || p.num === undefined) ? '' : p.num;
+      });
+      byType[s.type] = { series: s, map: m };
+    });
+
+    // 时长分布：按所选「区间组」取占比列
+    var distSeries = null;
+    allSeries.forEach(function (s) { if (!distSeries && s.groups && s.groups.length) distSeries = s; });
+    var distGroup = null;
+    if (distSeries) {
+      var want = String(groupIndex === undefined || groupIndex === null ? '0' : groupIndex);
+      distGroup = distSeries.groups.filter(function (g) { return String(g.groupIndex) === want; })[0] || distSeries.groups[0];
+    }
+    var distMap = Object.create(null);
+    if (distGroup) {
+      distGroup.rows.forEach(function (r) { distMap[r.date] = r.percents; });
+    }
+
+    var cols = [];
+    if (stage) {
+      cols.push({ fixed: true, name: '奇域名称', get: function () { return stage.name; } });
+    }
+    cols.push({ fixed: true, name: '日期', get: function (date) { return date; } });
+
+    function addSeries(type, colName, kind) {
+      var hit = byType[type];
+      if (!hit || !hit.series.points.length) return;
+      cols.push({
+        seriesKey: type,
+        kind: kind || '',
+        name: colName,
+        get: function (date) { return hit.map[date]; }
+      });
+      if (kind === 'seconds') {
+        var pts = Object.create(null);
+        (hit.series.points || []).forEach(function (p) { pts[p.date] = p.text; });
+        cols.push({
+          seriesKey: type,
+          kind: 'human',
+          name: colName + '(可读)',
+          get: function (date) {
+            var v = hit.map[date];
+            if (v === '' || v === undefined) return '';
+            return pts[date] || MHY.humanSeconds(v);
+          }
+        });
+      }
+    }
+
+    addSeries('METRIC_STAGE_TYPE_STAGE_HOT_SCORE', '奇域热度');
+    addSeries('METRIC_STAGE_TYPE_AVG_TIME', '平均游玩时长(秒)', 'seconds');
+    addSeries('METRIC_STAGE_TYPE_REVIEW_TOTAL', '评论数');
+    addSeries('METRIC_STAGE_TYPE_COVER_CLICK_RATE', '封面点击率(%)');
+    addSeries('METRIC_STAGE_TYPE_GOOD_RATE', '平均推荐率(%)');
+    addSeries('METRIC_STAGE_TYPE_ACTIVE_SCORE', '活跃指数');
+    addSeries('METRIC_STAGE_TYPE_LAST_VERSION_ACTIVE_SCORE', '上版本活跃指数');
+    addSeries('METRIC_USER_TYPE_STAGE_HOT_SCORE_TOTAL', '奇域总热度');
+    addSeries('METRIC_USER_TYPE_STAGE_TOTAL_HOT_RANK', '热度排名(%)');
+    addSeries('METRIC_USER_TYPE_AVG_STAGE_GOOD_RATE', '创作者平均推荐率(%)');
+    addSeries('METRIC_USER_TYPE_PLAY_SCALE_CUMULATIVE', '游玩指数');
+    addSeries('METRIC_USER_TYPE_STAGE_TOTAL', '奇域总数');
+    addSeries('METRIC_USER_TYPE_SUBSCRIBER_NUM', '订阅人数');
+
+    if (distGroup) {
+      distGroup.labels.forEach(function (l, li) {
+        cols.push({
+          kind: 'dist',
+          name: l + ' 占比(%)',
+          get: function (date) {
+            var row = distMap[date];
+            if (!row) return '';
+            return row[li] === undefined ? '' : row[li];
+          }
+        });
+      });
+    }
+
+    var header = cols.map(function (c) { return c.name; });
+    var rows = dateOrder.map(function (date) {
+      return cols.map(function (c) { return c.get(date); });
+    });
+
+    // 去掉整列都没有有效值的列（例如某指标全程无有效数据）
+    var keep = [];
+    cols.forEach(function (c, ci) {
+      if (c.fixed) { keep.push(ci); return; }
+      var vals = rows.map(function (r) { return r[ci]; });
+      if (hasData(vals)) keep.push(ci);
+    });
+    var cols2 = keep.map(function (ci) { return cols[ci]; });
+    var header2 = keep.map(function (ci) { return header[ci]; });
+    var rows2 = rows.map(function (r) { return keep.map(function (ci) { return r[ci]; }); })
+      // 去掉除日期/名称外整行都空的行
+      .filter(function (r) {
+        for (var i = 0; i < r.length; i++) {
+          if (cols2[i].fixed) continue;
+          if (r[i] !== '' && r[i] !== null && r[i] !== undefined) return true;
+        }
+        return false;
+      });
+
+    if (!rows2.length) return null;
+    return { name: stage ? (stage.name + '_数据总表') : '奇匠数据总表', header: header2, rows: rows2 };
+  }
+
+  /**
    * 把关卡详情 + 奇匠数据 + 评论组装成工作表
-   * @param {Object} input { stagePayload, userPayload, listPayload, range }
-   *   range: 7 / 30 / 0(全部)，决定趋势与变化量的时间窗口
+   * @param {Object} input { stagePayload, userPayload, listPayload, range, mode, group }
+   *   range: 7 / 30 / 0(全部) —— 时间窗口
+   *   mode : 'sheet'(默认，单张大表) | 'multi'（按主题分表）
+   *   group: 单表模式下用哪套时长分布区间组（0 常规 / 1 长 / 2 超长）
    * @returns {Array<{name,header,rows}>}
    */
   function buildSheets(input) {
     input = input || {};
     var range = Number(input.range) || 0;
+    var mode = input.mode === 'multi' ? 'multi' : 'sheet';
+    var group = input.group === undefined || input.group === null ? '0' : String(input.group);
     var stage = extractStageDetail(input.stagePayload);
     var user = extractUserData(input.userPayload);
     var sheets = [];
@@ -604,6 +756,22 @@
     }
 
     if (!stage && !user) return sheets;
+
+    // —— 单表模式：一张大表（+ 数据概况 + 评论内容 + 数据说明）——
+    if (mode === 'sheet') {
+      // 先把各序列按所选区间裁剪，再合并
+      var stageT = stage
+        ? Object.assign({}, stage, { series: stage.series.map(function (s) { return sliceSeries(s, range); }) })
+        : null;
+      var userT = user
+        ? Object.assign({}, user, { series: user.series.map(function (s) { return sliceSeries(s, range); }) })
+        : null;
+      push(overviewSheet(stage, user));
+      push(buildSingleSheet(stageT, userT, range, group));
+      if (input.stagePayload) push(commentSheet(extractComments(input.stagePayload)));
+      push(notesSheet(stage, user, range, 'sheet', group));
+      return sheets;
+    }
 
     push(overviewSheet(stage, user));
     if (stage) {
@@ -651,6 +819,7 @@
     extractComments: extractComments,
     extractStageList: extractStageList,
     buildSheets: buildSheets,
+    buildSingleSheet: buildSingleSheet,
     convertValue: convertValue,
     STAGE_METRICS: STAGE_METRICS,
     USER_METRICS: USER_METRICS,

@@ -31,6 +31,8 @@
     '.rlabel{font-size:12px;color:#7b869c;align-self:center;margin-right:2px;white-space:nowrap}',
     'button.rng{flex:1;padding:7px 6px;font-size:12px}',
     'button.rng.on{background:linear-gradient(135deg,#4c8dff,#2f5fe0);border-color:transparent;color:#fff}',
+    'select.sel{flex:1;border:1px solid #d8e0ef;background:#f7f9fd;color:#243043;border-radius:9px;',
+    'padding:7px 8px;font-size:12px;cursor:pointer}',
     'button.act{flex:1;min-width:96px;border:1px solid #d8e0ef;background:#f7f9fd;color:#243043;font-size:13px;',
     'padding:9px 10px;border-radius:10px;cursor:pointer;font-weight:600;transition:all .15s ease;white-space:nowrap}',
     'button.act:hover{background:#edf3ff;border-color:#b9cdf7}',
@@ -90,6 +92,26 @@
 
     ui.sub = el('div', 'sub', '正在读取页面…');
 
+    // 导出模式：单表（所有指标按日期合并）/ 分表（按主题拆多张工作表）
+    var rowMode = el('div', 'row');
+    rowMode.appendChild(el('span', 'rlabel', '导出模式'));
+    ui.modeBtns = {};
+    [['sheet', '单表'], ['multi', '分表']].forEach(function (pair, idx) {
+      var b = btn('act rng' + (idx === 0 ? ' on' : ''), pair[1]);
+      b.title = pair[0] === 'sheet'
+        ? '所有指标按日期合并成一张大表，便于筛选 / 透视 / 画图'
+        : '按主题分成多张工作表，便于逐项查看';
+      b.addEventListener('click', function () {
+        Object.keys(ui.modeBtns).forEach(function (k) { ui.modeBtns[k].classList.remove('on'); });
+        b.classList.add('on');
+        ui.mode = pair[0];
+        syncMode();
+        if (typeof ui.onMode === 'function') ui.onMode(ui.mode);
+      });
+      ui.modeBtns[pair[0]] = b;
+      rowMode.appendChild(b);
+    });
+
     var rowRange = el('div', 'row');
     var rangeLabel = el('span', 'rlabel', '导出区间');
     rowRange.appendChild(rangeLabel);
@@ -105,6 +127,24 @@
       ui.rangeBtns[pair[0]] = b;
       rowRange.appendChild(b);
     });
+
+    // 单表模式下选择「单局游玩时长分布」用哪套区间组
+    var rowGroup = el('div', 'row');
+    rowGroup.appendChild(el('span', 'rlabel', '分布区间'));
+    ui.groupSelect = el('select', 'sel');
+    [['0', '常规区间 ≤1/1-3/3-5/5-7/>7 分钟'],
+      ['1', '长区间 ≤3/3-6/6-9/9-12/>12 分钟'],
+      ['2', '超长区间 ≤6/6-13/13-19/19-26/>26 分钟']].forEach(function (pair) {
+      var o = el('option', '', pair[1]);
+      o.value = pair[0];
+      ui.groupSelect.appendChild(o);
+    });
+    ui.groupSelect.addEventListener('change', function () {
+      ui.group = String(ui.groupSelect.value);
+      if (typeof ui.onGroup === 'function') ui.onGroup(ui.group);
+    });
+    rowGroup.appendChild(ui.groupSelect);
+    ui.rowGroup = rowGroup;
 
     var row1 = el('div', 'row');
     ui.xlsx = btn('act primary', '导出 Excel (.xlsx)');
@@ -126,7 +166,9 @@
 
     ui.panel.appendChild(hd);
     ui.panel.appendChild(ui.sub);
+    ui.panel.appendChild(rowMode);
     ui.panel.appendChild(rowRange);
+    ui.panel.appendChild(rowGroup);
     ui.panel.appendChild(row1);
     ui.panel.appendChild(row2);
     ui.panel.appendChild(ui.stat);
@@ -198,6 +240,28 @@
     ui.range = Number(key);
   }
 
+  /** 单表模式才需要选分布区间组 */
+  function syncMode() {
+    if (ui.rowGroup) ui.rowGroup.style.display = (ui.mode === 'sheet') ? '' : 'none';
+  }
+
+  function setMode(mode) {
+    mount();
+    if (!ui.modeBtns) return;
+    var key = (mode === 'multi') ? 'multi' : 'sheet';
+    Object.keys(ui.modeBtns).forEach(function (k) { ui.modeBtns[k].classList.toggle('on', k === key); });
+    ui.mode = key;
+    syncMode();
+  }
+
+  function setGroup(g) {
+    mount();
+    if (!ui.groupSelect) return;
+    var key = String(g === undefined || g === null ? '0' : g);
+    ui.groupSelect.value = key;
+    ui.group = key;
+  }
+
   root.MHYUI = {
     mount: mount,
     togglePanel: togglePanel,
@@ -206,7 +270,11 @@
     setStat: setStat,
     setBusy: setBusy,
     setRange: setRange,
+    setMode: setMode,
+    setGroup: setGroup,
     getRange: function () { return ui.range === undefined ? 30 : ui.range; },
+    getMode: function () { return ui.mode === undefined ? 'sheet' : ui.mode; },
+    getGroup: function () { return ui.group === undefined ? '0' : ui.group; },
     on: function (name, fn) { ui[name] = fn; }
   };
 

@@ -138,8 +138,13 @@
    * 组装工作表：
    *   优先用官方接口数据（extract.js，结构化、含 30 天全量）
    *   接口不可用时退回页面可视化采集（collect.js）
+   * @param {Object} opts { range, mode:'sheet'|'multi', group }
    */
-  function buildSheetsFor(data, official, range) {
+  function buildSheetsFor(data, official, opts) {
+    opts = opts || {};
+    var range = opts.range;
+    var mode = opts.mode || 'sheet';
+    var group = opts.group === undefined || opts.group === null ? '0' : String(opts.group);
     if (official && Extract && (official.stage || official.user)) {
       var sheets = null;
       try {
@@ -147,7 +152,9 @@
           stagePayload: official.stage,
           userPayload: official.user,
           listPayload: official.list,
-          range: range
+          range: range,
+          mode: mode,
+          group: group
         });
       } catch (e) {
         console.error('[Miliastra Atlas] 接口数据解析失败，退回页面采集：', e);
@@ -349,19 +356,21 @@
 
     var data = harvest(true);
     var range = UI.getRange ? UI.getRange() : 30;
+    var mode = UI.getMode ? UI.getMode() : 'sheet';
+    var group = UI.getGroup ? UI.getGroup() : '0';
     var rangeText = range ? ('近 ' + range + ' 日') : '全部天数';
+    var modeText = mode === 'sheet' ? '单表' : '分表';
     UI.setBusy(true, '正在向官方接口取数…');
-    UI.setStat('正在向官方接口取数（导出区间：' + rangeText + '）…');
+    UI.setStat('正在向官方接口取数（' + modeText + ' · ' + rangeText + '）…');
     var t0 = Date.now();
 
     fetchOfficial().then(function (official) {
-      var builtPack = buildSheetsFor(data, official, range);
+      var builtPack = buildSheetsFor(data, official, { range: range, mode: mode, group: group });
       var built = clampSheets(builtPack.sheets);
       var sheets = built.sheets;
       var base = fileBase(data, official);
-      var note = builtPack.source === 'official'
-        ? ('数据来源：官方接口 · 导出区间：' + rangeText + ' · ' + sheets.length + ' 个工作表')
-        : ('数据来源：页面采集（接口不可用时兜底） · 导出区间：' + rangeText);
+      var note = (builtPack.source === 'official' ? '数据来源：官方接口' : '数据来源：页面采集（接口不可用时兜底）') +
+        ' · ' + modeText + ' · ' + rangeText + ' · ' + sheets.length + ' 个工作表';
       if (builtPack.errors && builtPack.errors.length) note += '\n接口提示：' + builtPack.errors.join('；');
 
       if (kind === 'json') {
@@ -462,10 +471,23 @@
         try { window.localStorage.setItem('mhy-export-range', String(r)); } catch (e) { /* ignore */ }
         UI.toast(r ? ('导出区间已切换为近 ' + r + ' 日') : '导出区间已切换为全部天数', 1800);
       });
+      UI.on('onMode', function (m) {
+        try { window.localStorage.setItem('mhy-export-mode', String(m)); } catch (e) { /* ignore */ }
+        UI.toast(m === 'sheet'
+          ? '单表模式：所有指标按日期合并成一张大表'
+          : '分表模式：按主题拆成多张工作表', 2200);
+      });
+      UI.on('onGroup', function (g) {
+        try { window.localStorage.setItem('mhy-export-group', String(g)); } catch (e) { /* ignore */ }
+      });
       // 记住上次选择
       try {
-        var saved = window.localStorage.getItem('mhy-export-range');
-        if (saved !== null && UI.setRange) UI.setRange(Number(saved));
+        var savedRange = window.localStorage.getItem('mhy-export-range');
+        if (savedRange !== null && UI.setRange) UI.setRange(Number(savedRange));
+        var savedMode = window.localStorage.getItem('mhy-export-mode');
+        if (savedMode && UI.setMode) UI.setMode(savedMode);
+        var savedGroup = window.localStorage.getItem('mhy-export-group');
+        if (savedGroup !== null && UI.setGroup) UI.setGroup(String(savedGroup));
       } catch (e) { /* ignore */ }
       UI.on('onOpen', function () {
         var d = harvest(false);
@@ -480,7 +502,7 @@
       try {
         var d = harvest(false);
         updateSub(d);
-        if (d.stageId) UI.toast('Miliastra Atlas已就绪：点击右下角按钮导出表格', 4200);
+        if (d.stageId) UI.toast('Miliastra Atlas 已就绪：点击右下角按钮导出表格', 4200);
       } catch (e) { /* ignore */ }
     }, 1500));
     watchRoute();

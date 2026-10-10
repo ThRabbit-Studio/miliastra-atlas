@@ -1,6 +1,6 @@
 {
   "name": "miliastra-atlas",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "description": "米游社千星奇域（Miliastra Wonderland）创作者中心数据导出浏览器扩展：把奇域数据与奇匠数据一键导出成可直接分析的 Excel 表格，分类分工作表、字段全中文、自动剔除调试与接口原始字段。",
   "keywords": [

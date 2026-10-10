@@ -255,6 +255,58 @@ function installChromeShim(officialData) {
     return window.MHYUI.getRange();
   });
   ok('点击「近7日」后面板区间生效', rangeSwitched === 7, rangeSwitched);
+
+  // 面板应有「单表 / 分表」模式开关，且单表模式下出现分布区间选择
+  const modeUi = await page.evaluate(() => {
+    const host = document.querySelector('[data-mhy-export-ui]');
+    const root = host && host.shadowRoot;
+    if (!root) return null;
+    const labels = Array.from(root.querySelectorAll('button')).map((b) => (b.textContent || '').trim());
+    const sel = root.querySelector('select');
+    return { hasSheet: labels.includes('单表'), hasMulti: labels.includes('分表'), hasSelect: !!sel, mode: window.MHYUI.getMode(), group: window.MHYUI.getGroup() };
+  });
+  ok('面板有「单表 / 分表」模式开关', modeUi && modeUi.hasSheet && modeUi.hasMulti, modeUi);
+  ok('默认单表模式', modeUi && modeUi.mode === 'sheet', modeUi);
+  ok('面板可自由选择分布区间（select）', modeUi && modeUi.hasSelect, modeUi);
+
+  // 切到分表模式并确认生效；再切回单表模式
+  const modeToggle = await page.evaluate(() => {
+    const host = document.querySelector('[data-mhy-export-ui]');
+    const root = host && host.shadowRoot;
+    const btns = Array.from(root.querySelectorAll('button'));
+    const multi = btns.filter((b) => (b.textContent || '').trim() === '分表')[0];
+    const sheet = btns.filter((b) => (b.textContent || '').trim() === '单表')[0];
+    const sel = root.querySelector('select');
+    if (!multi || !sheet || !sel) return null;
+    multi.click();
+    const afterMulti = window.MHYUI.getMode();
+    const groupHidden = (document.querySelector('[data-mhy-export-ui]').shadowRoot.querySelectorAll('select')[0].parentElement.style.display === 'none');
+    sheet.click();
+    // 切到「长区间」验证选择生效
+    sel.value = '1';
+    sel.dispatchEvent(new Event('change'));
+    return { afterMulti, backToSheet: window.MHYUI.getMode(), group: window.MHYUI.getGroup(), groupHidden };
+  });
+  ok('切到分表模式生效', modeToggle && modeToggle.afterMulti === 'multi', modeToggle);
+  ok('切回单表模式生效', modeToggle && modeToggle.backToSheet === 'sheet', modeToggle);
+  ok('分布区间可选（切到长区间）', modeToggle && modeToggle.group === '1', modeToggle);
+
+  // 在 Node 侧用同一套脱敏接口数据对比两种模式的产物规模（面板选择已在上一步验证）
+  if (officialData && officialData.stage) {
+    require(path.join(EXT, 'src/core/data.js'));
+    const Ext = require(path.join(EXT, 'src/core/extract.js'));
+    const X = require(path.join(EXT, 'src/core/xlsx.js'));
+    const singleSheets = Ext.buildSheets({ stagePayload: officialData.stage, userPayload: officialData.user, range: 30, mode: 'sheet', group: '1' });
+    const multiSheets = Ext.buildSheets({ stagePayload: officialData.stage, userPayload: officialData.user, range: 30, mode: 'multi' });
+    const singleBytes = await X.buildXlsx(singleSheets);
+    const multiBytes = await X.buildXlsx(multiSheets);
+    ok('单表模式工作表很少（4 张）', singleSheets.length === 4, singleSheets.map((s) => s.name));
+    ok('单表模式含「数据总表」', singleSheets.some((s) => /数据总表/.test(s.name)), singleSheets.map((s) => s.name));
+    ok('分表模式工作表更多（>12 张）', multiSheets.length > 12, multiSheets.length);
+    ok('单表模式体积明显更小', singleBytes.length < multiBytes.length * 0.6, singleBytes.length + ' vs ' + multiBytes.length);
+    fs.writeFileSync(path.join(OUT, 'miliastra-atlas-sample-single.xlsx'), singleBytes);
+  }
+
   // background 的 ensureInjected() 会先 ping 探测是否已注入：已注入时必须回 ok，避免重复注入
   const pingOk = await page.evaluate(() => new Promise((resolve) => {
     const fn = window.__test.listeners[0];
@@ -301,9 +353,8 @@ function installChromeShim(officialData) {
     const officialXlsx = path.join(OUT, '浏览器E2E_官方接口.xlsx');
     fs.writeFileSync(officialXlsx, buf);
     ok('官方接口导出文件已落盘且体积合理', buf.length > 8000, buf.length);
-    // 官方接口版含 22 张工作表（页面兜底版只有 5 张），体积差异明显；
-    // 工作表 XML 是 deflate 压缩的，因此这里用体积区分来源。
-    ok('体积明显大于页面兜底版（说明走的是官方接口全量数据）', buf.length > 18000, buf.length);
+    // 面板此时是「单表 + 近7日」，产物应明显小于分表模式（分表约 24KB）
+    ok('单表产物体积符合预期（< 分表模式）', buf.length < 15000, buf.length);
   }
 
   ok('全程无页面 JS 报错', pageErrors.length === 0, pageErrors.slice(0, 3));
