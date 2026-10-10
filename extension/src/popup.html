@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Miliastra Atlas</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      width: 320px; margin: 0; padding: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      font-size: 13px; color: #1f2430; background: #fff;
+    }
+    h1 { font-size: 15px; margin: 0 0 4px; }
+    .muted { color: #7b869c; font-size: 12px; line-height: 1.6; word-break: break-all; }
+    .card { background: #f6f8fc; border: 1px solid #e8edf6; border-radius: 10px; padding: 9px 10px; margin: 10px 0; }
+    .kv { display: flex; justify-content: space-between; gap: 10px; line-height: 1.9; }
+    .kv span:first-child { color: #6b7488; }
+    .kv span:last-child { font-weight: 600; text-align: right; word-break: break-all; }
+    button {
+      width: 100%; border: 1px solid #d8e0ef; background: #f7f9fd; color: #243043;
+      padding: 9px 10px; border-radius: 9px; cursor: pointer; font-size: 13px; font-weight: 600;
+      margin-top: 8px; transition: all .15s ease;
+    }
+    button:hover { background: #edf3ff; border-color: #b9cdf7; }
+    button.primary { background: linear-gradient(135deg, #4c8dff, #2f5fe0); border-color: transparent; color: #fff; }
+    button.primary:hover { filter: brightness(1.06); }
+    button:disabled { opacity: .5; cursor: not-allowed; }
+    .tip { font-size: 11.5px; color: #98a2b8; margin-top: 10px; line-height: 1.6; }
+    .ok { color: #157347; } .warn { color: #b45309; } .err { color: #b42318; }
+    a { color: #2f5fe0; }
+  </style>
+</head>
+<body>
+  <h1>Miliastra Atlas</h1>
+  <div class="muted">在奇匠中心「奇域详情」页一键导出游玩数据 / 互动数据 / 趋势折线为表格。</div>
+
+  <div class="card" id="state">
+    <div class="kv"><span>当前标签页</span><span id="pageState">检测中…</span></div>
+    <div class="kv"><span>奇域ID</span><span id="stageId">—</span></div>
+    <div class="kv"><span>已拦截接口</span><span id="captured">—</span></div>
+  </div>
+
+  <button class="primary" id="export">导出当前页数据（Excel）</button>
+  <button id="refresh">重新检测</button>
+  <button id="open">打开奇域数据页面</button>
+
+  <div class="tip" id="msg">提示：首次使用请先在浏览器中打开奇域详情页，等数据渲染出来后再点导出。</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

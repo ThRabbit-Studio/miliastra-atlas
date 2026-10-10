@@ -1,0 +1,329 @@
+{
+  "retcode": 0,
+  "message": "OK",
+  "data": {
+    "stage_list": [
+      {
+        "base_info": {
+          "uid": "200000001",
+          "region": "cn_gf01",
+          "stage_id": "54461776301",
+          "stage_name": "尘世执政录",
+          "cover_url": "https://example.invalid/ugcprodgf/image/cn_gf01/54030990636822/20260927/e7dbacd9-b04c-412e-a911-721f0dd4c90a.png",
+          "latest_online_time": 1790506931,
+          "game_list_status": "GAME_LIST_STATUS_ONLINE"
+        },
+        "today_stats": [
+          {
+            "metric_type": "METRIC_STAGE_TYPE_STAGE_HOT_SCORE",
+            "cur": "505",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_GOOD_RATE",
+            "cur": "0",
+            "cur_invalid": true,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_AVG_TIME",
+            "cur": "323",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR"
+          }
+        ]
+      },
+      {
+        "base_info": {
+          "uid": "200000001",
+          "region": "cn_gf01",
+          "stage_id": "28691972525",
+          "stage_name": "啥都木有",
+          "cover_url": "https://example.invalid/ugcprodgf/image/cn_gf01/54030990636822/20260418/df2ba527-eedf-4981-b4ee-bd8e3abf0178.png",
+          "latest_online_time": 1786081983,
+          "game_list_status": "GAME_LIST_STATUS_ONLINE"
+        },
+        "today_stats": [
+          {
+            "metric_type": "METRIC_STAGE_TYPE_STAGE_HOT_SCORE",
+            "cur": "70",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_GOOD_RATE",
+            "cur": "0",
+            "cur_invalid": true,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_AVG_TIME",
+            "cur": "143",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR"
+          }
+        ]
+      },
+      {
+        "base_info": {
+          "uid": "200000001",
+          "region": "cn_gf01",
+          "stage_id": "20102037933",
+          "stage_name": "幽秘险境",
+          "cover_url": "https://example.invalid/ugcprodgf/image/cn_gf01/54030990636822/20251228/11734d62-dcb0-41f1-8102-3e4960dc4d8e.png",
+          "latest_online_time": 1786081953,
+          "game_list_status": "GAME_LIST_STATUS_ONLINE"
+        },
+        "today_stats": [
+          {
+            "metric_type": "METRIC_STAGE_TYPE_STAGE_HOT_SCORE",
+            "cur": "6",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_GOOD_RATE",
+            "cur": "0",
+            "cur_invalid": true,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_AVG_TIME",
+            "cur": "91",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR"
+          }
+        ]
+      },
+      {
+        "base_info": {
+          "uid": "200000001",
+          "region": "cn_gf01",
+          "stage_id": "50166809005",
+          "stage_name": "啥都木有 技术预览版",
+          "cover_url": "https://example.invalid/ugcprodgf/image/cn_gf01/54030990636822/20260729/9ac7318a-a06e-437f-805f-914b3f58fd91.png",
+          "latest_online_time": 1786074523,
+          "game_list_status": "GAME_LIST_STATUS_OFFLINE"
+        },
+        "today_stats": [
+          {
+            "metric_type": "METRIC_STAGE_TYPE_STAGE_HOT_SCORE",
+            "cur": "0",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_GOOD_RATE",
+            "cur": "0",
+            "cur_invalid": true,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_AVG_TIME",
+            "cur": "99",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR"
+          }
+        ]
+      },
+      {
+        "base_info": {
+          "uid": "200000001",
+          "region": "cn_gf01",
+          "stage_id": "15807070637",
+          "stage_name": "惊魂晚自习（测试用）",
+          "cover_url": "https://example.invalid/ugcprodgf/image/cn_gf01/54030990636822/20251129/727ccc7d-d43e-431f-98e9-9c6e4bf4684d.png",
+          "latest_online_time": 1785337378,
+          "game_list_status": "GAME_LIST_STATUS_OFFLINE"
+        },
+        "today_stats": [
+          {
+            "metric_type": "METRIC_STAGE_TYPE_STAGE_HOT_SCORE",
+            "cur": "0",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_GOOD_RATE",
+            "cur": "0",
+            "cur_invalid": true,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_AVG_TIME",
+            "cur": "70",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR"
+          }
+        ]
+      },
+      {
+        "base_info": {
+          "uid": "200000001",
+          "region": "cn_gf01",
+          "stage_id": "41576874413",
+          "stage_name": "新建关卡 41576874413",
+          "cover_url": "https://example.invalid/static-resource-v2/2025/07/30/13666680ded15449b5f91a13701aba1b_2939653011406715643.png",
+          "latest_online_time": 1783245372,
+          "game_list_status": "GAME_LIST_STATUS_OFFLINE"
+        },
+        "today_stats": [
+          {
+            "metric_type": "METRIC_STAGE_TYPE_STAGE_HOT_SCORE",
+            "cur": "0",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_GOOD_RATE",
+            "cur": "0",
+            "cur_invalid": true,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_AVG_TIME",
+            "cur": "37",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR"
+          }
+        ]
+      },
+      {
+        "base_info": {
+          "uid": "200000001",
+          "region": "cn_gf01",
+          "stage_id": "11512103341",
+          "stage_name": "（测试用）",
+          "cover_url": "https://example.invalid/ugcprodgf/image/cn_gf01/54030990636822/20251116/650505d4-1930-4881-b29d-e8f1123516ee.png",
+          "latest_online_time": 1780823032,
+          "game_list_status": "GAME_LIST_STATUS_OFFLINE"
+        },
+        "today_stats": [
+          {
+            "metric_type": "METRIC_STAGE_TYPE_STAGE_HOT_SCORE",
+            "cur": "0",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_GOOD_RATE",
+            "cur": "0",
+            "cur_invalid": true,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_AVG_TIME",
+            "cur": "51",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR"
+          }
+        ]
+      },
+      {
+        "base_info": {
+          "uid": "200000001",
+          "region": "cn_gf01",
+          "stage_id": "37281907117",
+          "stage_name": "新建关卡 37281907117",
+          "cover_url": "https://example.invalid/static-resource-v2/2025/07/30/13666680ded15449b5f91a13701aba1b_2939653011406715643.png",
+          "latest_online_time": 1780195916,
+          "game_list_status": "GAME_LIST_STATUS_OFFLINE"
+        },
+        "today_stats": [
+          {
+            "metric_type": "METRIC_STAGE_TYPE_STAGE_HOT_SCORE",
+            "cur": "0",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_GOOD_RATE",
+            "cur": "0",
+            "cur_invalid": true,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+          },
+          {
+            "metric_type": "METRIC_STAGE_TYPE_AVG_TIME",
+            "cur": "154",
+            "cur_invalid": false,
+            "delta": "0",
+            "delta_invalid": true,
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR"
+          }
+        ]
+      }
+    ],
+    "total": 8
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>奇匠中心 - 奇域数据</title>
+  <style>body{font-family:sans-serif}canvas{display:block}</style>
+</head>
+<body>
+  <div class="sidebar"><a>首页</a><a>数据中心</a></div>
+
+  <!-- 顶部信息卡 -->
+  <table class="info-table">
+    <tr>
+      <td><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="cover"><div>尘世执政录</div></td>
+      <td>奇域ID 54461776301</td>
+      <td>状态 上线中</td>
+      <td>发布时间 2026/09/27 19:02 (UTC+8)</td>
+    </tr>
+  </table>
+
+  <div class="card"><div class="label">奇域热度</div><div class="value">505</div><div class="delta">较昨日 ↑1</div></div>
+  <div class="card">
+    <div class="label">平均游玩时长</div>
+    <div class="vwrap"><span class="value">5分23秒</span><span class="delta">较昨日 -</span></div>
+  </div>
+
+  <div id="chart-heat" style="width:600px;height:320px"></div>
+  <div id="chart-dur" style="width:600px;height:320px"></div>
+
+  <script src="./echarts.min.js"></script>
+  <script>
+    window.__PAGE_READY__ = false;
+    function boot() {
+      const dates = [];
+      const d = new Date('2026-09-10T00:00:00');
+      for (let i = 0; i < 30; i++) {
+        const t = new Date(d.getTime() + i * 86400000);
+        dates.push(t.getFullYear() + '-' + String(t.getMonth() + 1).padStart(2, '0') + '-' + String(t.getDate()).padStart(2, '0'));
+      }
+      const heat = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,118,246,331,398,452,489,508,508,508,505,505,505];
+      const dur  = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,180,796,301,205,223,208,205,201,203,199,198,200];
+      window.echarts.init(document.getElementById('chart-heat')).setOption({
+        legend: { data: ['奇域热度'] },
+        xAxis: { type: 'category', data: dates },
+        yAxis: { type: 'value' },
+        series: [{ name: '奇域热度', type: 'line', data: heat }]
+      });
+      window.echarts.init(document.getElementById('chart-dur')).setOption({
+        legend: { data: ['平均游玩时长'] },
+        xAxis: { type: 'category', data: dates },
+        yAxis: { type: 'value', axisLabel: { formatter: v => v >= 60 ? Math.round(v / 60) + '分钟' : v + '秒' } },
+        series: [{ name: '平均游玩时长', type: 'line', data: dur }]
+      });
+      window.__PAGE_READY__ = true;
+    }
+    if (window.echarts) boot();
+    else document.querySelector('script[src*="echarts"]').addEventListener('load', boot);
+  </script>
+</body>
+</html>

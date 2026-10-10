@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "Miliastra Atlas — 奇域数据导出",
+  "short_name": "Miliastra Atlas",
+  "version": "1.1.0",
+  "description": "Export Miliastra Wonderland (千星奇域) creator data into clean, analysis-ready Excel sheets: trends, distributions, comments and metrics.",
+  "minimum_chrome_version": "109",
+  "permissions": ["downloads", "scripting"],
+  "host_permissions": [
+    "*://act.mihoyo.com/*",
+    "*://api-micreator.mihoyo.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_title": "Miliastra Atlas — 导出奇域数据",
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://act.mihoyo.com/miliastra_wonderland/*",
+        "*://act.mihoyo.com/*miliastra*"
+      ],
+      "js": [
+        "src/core/data.js",
+        "src/core/extract.js",
+        "src/core/xlsx.js",
+        "src/core/collect.js",
+        "src/ui.js",
+        "src/content.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/inject.js"],
+      "matches": ["*://act.mihoyo.com/*"]
+    }
+  ]
+}

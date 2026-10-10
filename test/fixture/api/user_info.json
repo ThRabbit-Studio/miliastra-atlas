@@ -1,0 +1,1403 @@
+{
+  "retcode": 0,
+  "message": "OK",
+  "data": {
+    "today_str": "2026-10-09",
+    "today_stats": [
+      {
+        "metric_type": "METRIC_USER_TYPE_STAGE_HOT_SCORE_TOTAL",
+        "cur": "581",
+        "cur_invalid": false,
+        "delta": "-5",
+        "delta_invalid": false,
+        "value_type": "METRIC_VALUE_TYPE_NORMAL",
+        "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+      },
+      {
+        "metric_type": "METRIC_USER_TYPE_STAGE_TOTAL_HOT_RANK",
+        "cur": "300",
+        "cur_invalid": false,
+        "delta": "0",
+        "delta_invalid": false,
+        "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+        "calculate_type": "METRIC_CALCULATE_TYPE_UNSPECIFIED"
+      },
+      {
+        "metric_type": "METRIC_USER_TYPE_AVG_STAGE_GOOD_RATE",
+        "cur": "6250",
+        "cur_invalid": false,
+        "delta": "0",
+        "delta_invalid": false,
+        "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+        "calculate_type": "METRIC_CALCULATE_TYPE_UNSPECIFIED"
+      },
+      {
+        "metric_type": "METRIC_USER_TYPE_PLAY_SCALE_CUMULATIVE",
+        "cur": "10000",
+        "cur_invalid": false,
+        "delta": "0",
+        "delta_invalid": false,
+        "value_type": "METRIC_VALUE_TYPE_SCORE",
+        "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+      },
+      {
+        "metric_type": "METRIC_USER_TYPE_STAGE_TOTAL",
+        "cur": "8",
+        "cur_invalid": false,
+        "delta": "0",
+        "delta_invalid": false,
+        "value_type": "METRIC_VALUE_TYPE_NORMAL",
+        "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR"
+      }
+    ],
+    "trend_data": [
+      {
+        "metric_type": "METRIC_USER_TYPE_STAGE_HOT_SCORE_TOTAL",
+        "delta_7_day": "110",
+        "delta_7_day_invalid": false,
+        "delta_30_day": "352",
+        "delta_30_day_invalid": false,
+        "daily_info": [
+          "229",
+          "221",
+          "219",
+          "202",
+          "192",
+          "170",
+          "147",
+          "133",
+          "134",
+          "131",
+          "118",
+          "107",
+          "96",
+          "80",
+          "77",
+          "91",
+          "95",
+          "156",
+          "210",
+          "277",
+          "324",
+          "387",
+          "437",
+          "471",
+          "537",
+          "540",
+          "564",
+          "594",
+          "586",
+          "581"
+        ],
+        "daily_stats": [
+          {
+            "cur": "229",
+            "delta": "0",
+            "date": "2026-09-10",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "221",
+            "delta": "-8",
+            "date": "2026-09-11",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "219",
+            "delta": "-2",
+            "date": "2026-09-12",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "202",
+            "delta": "-17",
+            "date": "2026-09-13",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "192",
+            "delta": "-10",
+            "date": "2026-09-14",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "170",
+            "delta": "-22",
+            "date": "2026-09-15",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "147",
+            "delta": "-23",
+            "date": "2026-09-16",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "133",
+            "delta": "-14",
+            "date": "2026-09-17",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "134",
+            "delta": "1",
+            "date": "2026-09-18",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "131",
+            "delta": "-3",
+            "date": "2026-09-19",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "118",
+            "delta": "-13",
+            "date": "2026-09-20",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "107",
+            "delta": "-11",
+            "date": "2026-09-21",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "96",
+            "delta": "-11",
+            "date": "2026-09-22",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "80",
+            "delta": "-16",
+            "date": "2026-09-23",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "77",
+            "delta": "-3",
+            "date": "2026-09-24",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "91",
+            "delta": "14",
+            "date": "2026-09-25",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "95",
+            "delta": "4",
+            "date": "2026-09-26",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "156",
+            "delta": "61",
+            "date": "2026-09-27",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "210",
+            "delta": "54",
+            "date": "2026-09-28",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "277",
+            "delta": "67",
+            "date": "2026-09-29",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "324",
+            "delta": "47",
+            "date": "2026-09-30",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "387",
+            "delta": "63",
+            "date": "2026-10-01",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "437",
+            "delta": "50",
+            "date": "2026-10-02",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "471",
+            "delta": "34",
+            "date": "2026-10-03",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "537",
+            "delta": "66",
+            "date": "2026-10-04",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "540",
+            "delta": "3",
+            "date": "2026-10-05",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "564",
+            "delta": "24",
+            "date": "2026-10-06",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "594",
+            "delta": "30",
+            "date": "2026-10-07",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "586",
+            "delta": "-8",
+            "date": "2026-10-08",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "581",
+            "delta": "-5",
+            "date": "2026-10-09",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          }
+        ],
+        "value_type": "METRIC_VALUE_TYPE_NORMAL",
+        "calculate_type": "METRIC_CALCULATE_TYPE_ROUND",
+        "normalized_info_7d": [],
+        "normalized_stats_7d": []
+      },
+      {
+        "metric_type": "METRIC_USER_TYPE_AVG_STAGE_GOOD_RATE",
+        "delta_7_day": "625",
+        "delta_7_day_invalid": false,
+        "delta_30_day": "795",
+        "delta_30_day_invalid": false,
+        "daily_info": [
+          "5455",
+          "5455",
+          "5455",
+          "5455",
+          "5455",
+          "5455",
+          "5455",
+          "5455",
+          "5455",
+          "5455",
+          "5455",
+          "5455",
+          "5455",
+          "5455",
+          "5455",
+          "5455",
+          "5455",
+          "5833",
+          "5714",
+          "6000",
+          "6250",
+          "5625",
+          "5625",
+          "5625",
+          "5625",
+          "5625",
+          "5625",
+          "6250",
+          "6250",
+          "6250"
+        ],
+        "daily_stats": [
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-10",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-11",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-12",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-13",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-14",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-15",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-16",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-17",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-18",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-19",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-20",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-21",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-22",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-23",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-24",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-25",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5455",
+            "delta": "0",
+            "date": "2026-09-26",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5833",
+            "delta": "378",
+            "date": "2026-09-27",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5714",
+            "delta": "-119",
+            "date": "2026-09-28",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "6000",
+            "delta": "286",
+            "date": "2026-09-29",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "6250",
+            "delta": "250",
+            "date": "2026-09-30",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5625",
+            "delta": "-625",
+            "date": "2026-10-01",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5625",
+            "delta": "0",
+            "date": "2026-10-02",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5625",
+            "delta": "0",
+            "date": "2026-10-03",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5625",
+            "delta": "0",
+            "date": "2026-10-04",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5625",
+            "delta": "0",
+            "date": "2026-10-05",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5625",
+            "delta": "0",
+            "date": "2026-10-06",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "6250",
+            "delta": "625",
+            "date": "2026-10-07",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "6250",
+            "delta": "0",
+            "date": "2026-10-08",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "6250",
+            "delta": "0",
+            "date": "2026-10-09",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          }
+        ],
+        "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+        "calculate_type": "METRIC_CALCULATE_TYPE_UNSPECIFIED",
+        "normalized_info_7d": [],
+        "normalized_stats_7d": []
+      },
+      {
+        "metric_type": "METRIC_USER_TYPE_PLAY_SCALE_CUMULATIVE",
+        "delta_7_day": "0",
+        "delta_7_day_invalid": false,
+        "delta_30_day": "0",
+        "delta_30_day_invalid": false,
+        "daily_info": [
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000",
+          "10000"
+        ],
+        "daily_stats": [
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-10",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-11",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-12",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-13",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-14",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-15",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-16",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-17",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-18",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-19",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-20",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-21",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-22",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-23",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-24",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-25",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-26",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-27",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-28",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-29",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-09-30",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-10-01",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-10-02",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-10-03",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-10-04",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-10-05",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-10-06",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-10-07",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-10-08",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          },
+          {
+            "cur": "10000",
+            "delta": "0",
+            "date": "2026-10-09",
+            "value_type": "METRIC_VALUE_TYPE_SCORE",
+            "cur_invalid": false
+          }
+        ],
+        "value_type": "METRIC_VALUE_TYPE_SCORE",
+        "calculate_type": "METRIC_CALCULATE_TYPE_ROUND",
+        "normalized_info_7d": [],
+        "normalized_stats_7d": []
+      },
+      {
+        "metric_type": "METRIC_USER_TYPE_STAGE_TOTAL",
+        "delta_7_day": "0",
+        "delta_7_day_invalid": false,
+        "delta_30_day": "1",
+        "delta_30_day_invalid": false,
+        "daily_info": [
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "7",
+          "8",
+          "8",
+          "8",
+          "8",
+          "8",
+          "8",
+          "8",
+          "8",
+          "8",
+          "8",
+          "8",
+          "8",
+          "8"
+        ],
+        "daily_stats": [
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-10",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-11",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-12",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-13",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-14",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-15",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-16",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-17",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-18",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-19",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-20",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-21",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-22",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-23",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-24",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-25",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "7",
+            "delta": "0",
+            "date": "2026-09-26",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "8",
+            "delta": "1",
+            "date": "2026-09-27",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "8",
+            "delta": "0",
+            "date": "2026-09-28",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "8",
+            "delta": "0",
+            "date": "2026-09-29",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "8",
+            "delta": "0",
+            "date": "2026-09-30",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "8",
+            "delta": "0",
+            "date": "2026-10-01",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "8",
+            "delta": "0",
+            "date": "2026-10-02",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "8",
+            "delta": "0",
+            "date": "2026-10-03",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "8",
+            "delta": "0",
+            "date": "2026-10-04",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "8",
+            "delta": "0",
+            "date": "2026-10-05",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "8",
+            "delta": "0",
+            "date": "2026-10-06",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "8",
+            "delta": "0",
+            "date": "2026-10-07",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "8",
+            "delta": "0",
+            "date": "2026-10-08",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "8",
+            "delta": "0",
+            "date": "2026-10-09",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          }
+        ],
+        "value_type": "METRIC_VALUE_TYPE_NORMAL",
+        "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR",
+        "normalized_info_7d": [],
+        "normalized_stats_7d": []
+      },
+      {
+        "metric_type": "METRIC_USER_TYPE_SUBSCRIBER_NUM",
+        "delta_7_day": "0",
+        "delta_7_day_invalid": true,
+        "delta_30_day": "0",
+        "delta_30_day_invalid": true,
+        "daily_info": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "266",
+          "266",
+          "266",
+          "266",
+          "266",
+          "0",
+          "0",
+          "0",
+          "266",
+          "266",
+          "266",
+          "266",
+          "266",
+          "266",
+          "266",
+          "533",
+          "800",
+          "800",
+          "800",
+          "800",
+          "800",
+          "800",
+          "800",
+          "533"
+        ],
+        "daily_stats": [
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-10",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-11",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-12",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-13",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-14",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-15",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": true
+          },
+          {
+            "cur": "266",
+            "delta": "0",
+            "date": "2026-09-16",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "266",
+            "delta": "0",
+            "date": "2026-09-17",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "266",
+            "delta": "0",
+            "date": "2026-09-18",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "266",
+            "delta": "0",
+            "date": "2026-09-19",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "266",
+            "delta": "0",
+            "date": "2026-09-20",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "-266",
+            "date": "2026-09-21",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-22",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-23",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "266",
+            "delta": "266",
+            "date": "2026-09-24",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "266",
+            "delta": "0",
+            "date": "2026-09-25",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "266",
+            "delta": "0",
+            "date": "2026-09-26",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "266",
+            "delta": "0",
+            "date": "2026-09-27",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "266",
+            "delta": "0",
+            "date": "2026-09-28",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "266",
+            "delta": "0",
+            "date": "2026-09-29",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "266",
+            "delta": "0",
+            "date": "2026-09-30",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "533",
+            "delta": "267",
+            "date": "2026-10-01",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "800",
+            "delta": "267",
+            "date": "2026-10-02",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "800",
+            "delta": "0",
+            "date": "2026-10-03",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "800",
+            "delta": "0",
+            "date": "2026-10-04",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "800",
+            "delta": "0",
+            "date": "2026-10-05",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "800",
+            "delta": "0",
+            "date": "2026-10-06",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "800",
+            "delta": "0",
+            "date": "2026-10-07",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "800",
+            "delta": "0",
+            "date": "2026-10-08",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "533",
+            "delta": "-267",
+            "date": "2026-10-09",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          }
+        ],
+        "value_type": "METRIC_VALUE_TYPE_NORMAL",
+        "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR",
+        "normalized_info_7d": [
+          "800",
+          "800",
+          "800",
+          "800",
+          "800",
+          "800",
+          "0"
+        ],
+        "normalized_stats_7d": [
+          {
+            "cur": "800",
+            "delta": "0",
+            "date": "2026-10-03",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "800",
+            "delta": "0",
+            "date": "2026-10-04",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "800",
+            "delta": "0",
+            "date": "2026-10-05",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "800",
+            "delta": "0",
+            "date": "2026-10-06",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "800",
+            "delta": "0",
+            "date": "2026-10-07",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "800",
+            "delta": "0",
+            "date": "2026-10-08",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "-800",
+            "date": "2026-10-09",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          }
+        ]
+      }
+    ],
+    "subscribe_gear_config": [
+      {
+        "gear": 1,
+        "threshold": 1000
+      },
+      {
+        "gear": 2,
+        "threshold": 5000
+      },
+      {
+        "gear": 3,
+        "threshold": 10000
+      }
+    ]
+  }
+}

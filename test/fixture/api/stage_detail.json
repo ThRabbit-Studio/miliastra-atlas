@@ -1,0 +1,2914 @@
+{
+  "retcode": 0,
+  "message": "OK",
+  "data": {
+    "today_str": "2026-10-09",
+    "stage_info": {
+      "uid": "200000001",
+      "region": "cn_gf01",
+      "stage_id": "54461776301",
+      "stage_name": "尘世执政录",
+      "cover_url": "https://example.invalid/ugcprodgf/image/cn_gf01/54030990636822/20260927/e7dbacd9-b04c-412e-a911-721f0dd4c90a.png",
+      "latest_online_time": 1790506931,
+      "game_list_status": "GAME_LIST_STATUS_ONLINE"
+    },
+    "today_stats": [
+      {
+        "metric_type": "METRIC_STAGE_TYPE_STAGE_HOT_SCORE",
+        "cur": "505",
+        "cur_invalid": false,
+        "delta": "-1",
+        "delta_invalid": false,
+        "value_type": "METRIC_VALUE_TYPE_NORMAL",
+        "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+      },
+      {
+        "metric_type": "METRIC_STAGE_TYPE_AVG_TIME",
+        "cur": "323",
+        "cur_invalid": false,
+        "delta": "0",
+        "delta_invalid": true,
+        "value_type": "METRIC_VALUE_TYPE_SECOND",
+        "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR"
+      },
+      {
+        "metric_type": "METRIC_STAGE_TYPE_GOOD_RATE",
+        "cur": "0",
+        "cur_invalid": true,
+        "delta": "0",
+        "delta_invalid": true,
+        "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+        "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+      },
+      {
+        "metric_type": "METRIC_STAGE_TYPE_REVIEW_TOTAL",
+        "cur": "5",
+        "cur_invalid": false,
+        "delta": "0",
+        "delta_invalid": false,
+        "value_type": "METRIC_VALUE_TYPE_NORMAL",
+        "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR"
+      },
+      {
+        "metric_type": "METRIC_STAGE_TYPE_COVER_CLICK_RATE",
+        "cur": "259",
+        "cur_invalid": false,
+        "delta": "-35",
+        "delta_invalid": false,
+        "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+        "calculate_type": "METRIC_CALCULATE_TYPE_ROUND"
+      },
+      {
+        "metric_type": "METRIC_STAGE_TYPE_ACTIVE_SCORE",
+        "cur": "5",
+        "cur_invalid": false,
+        "delta": "0",
+        "delta_invalid": true,
+        "value_type": "METRIC_VALUE_TYPE_NORMAL",
+        "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR"
+      }
+    ],
+    "trend_data": [
+      {
+        "metric_type": "METRIC_STAGE_TYPE_STAGE_HOT_SCORE",
+        "delta_7_day": "117",
+        "delta_7_day_invalid": false,
+        "delta_30_day": "505",
+        "delta_30_day_invalid": true,
+        "daily_info": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "59",
+          "115",
+          "189",
+          "239",
+          "302",
+          "354",
+          "388",
+          "452",
+          "459",
+          "482",
+          "512",
+          "506",
+          "505"
+        ],
+        "daily_stats": [
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-10",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-11",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-12",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-13",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-14",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-15",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-16",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-17",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-18",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-19",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-20",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-21",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-22",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-23",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-24",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-25",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-26",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "59",
+            "delta": "59",
+            "date": "2026-09-27",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "115",
+            "delta": "56",
+            "date": "2026-09-28",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "189",
+            "delta": "74",
+            "date": "2026-09-29",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "239",
+            "delta": "50",
+            "date": "2026-09-30",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "302",
+            "delta": "63",
+            "date": "2026-10-01",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "354",
+            "delta": "52",
+            "date": "2026-10-02",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "388",
+            "delta": "34",
+            "date": "2026-10-03",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "452",
+            "delta": "64",
+            "date": "2026-10-04",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "459",
+            "delta": "7",
+            "date": "2026-10-05",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "482",
+            "delta": "23",
+            "date": "2026-10-06",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "512",
+            "delta": "30",
+            "date": "2026-10-07",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "506",
+            "delta": "-6",
+            "date": "2026-10-08",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "505",
+            "delta": "-1",
+            "date": "2026-10-09",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          }
+        ],
+        "value_type": "METRIC_VALUE_TYPE_NORMAL",
+        "calculate_type": "METRIC_CALCULATE_TYPE_ROUND",
+        "normalized_info_7d": [],
+        "normalized_stats_7d": [],
+        "multi_group_dist": null
+      },
+      {
+        "metric_type": "METRIC_STAGE_TYPE_AVG_TIME",
+        "delta_7_day": "0",
+        "delta_7_day_invalid": true,
+        "delta_30_day": "0",
+        "delta_30_day_invalid": true,
+        "daily_info": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "140",
+          "694",
+          "545",
+          "389",
+          "319",
+          "317",
+          "348",
+          "349",
+          "332",
+          "317",
+          "325",
+          "325",
+          "323"
+        ],
+        "daily_stats": [
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-10",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-11",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-12",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-13",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-14",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-15",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-16",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-17",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-18",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-19",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-20",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-21",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-22",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-23",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-24",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-25",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-26",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "140",
+            "delta": "0",
+            "date": "2026-09-27",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "694",
+            "delta": "0",
+            "date": "2026-09-28",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "545",
+            "delta": "0",
+            "date": "2026-09-29",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "389",
+            "delta": "0",
+            "date": "2026-09-30",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "319",
+            "delta": "0",
+            "date": "2026-10-01",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "317",
+            "delta": "0",
+            "date": "2026-10-02",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "348",
+            "delta": "0",
+            "date": "2026-10-03",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "349",
+            "delta": "0",
+            "date": "2026-10-04",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "332",
+            "delta": "0",
+            "date": "2026-10-05",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "317",
+            "delta": "0",
+            "date": "2026-10-06",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "325",
+            "delta": "0",
+            "date": "2026-10-07",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "325",
+            "delta": "0",
+            "date": "2026-10-08",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "323",
+            "delta": "0",
+            "date": "2026-10-09",
+            "value_type": "METRIC_VALUE_TYPE_SECOND",
+            "cur_invalid": false
+          }
+        ],
+        "value_type": "METRIC_VALUE_TYPE_SECOND",
+        "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR",
+        "normalized_info_7d": [],
+        "normalized_stats_7d": [],
+        "multi_group_dist": {
+          "group_configs": [
+            {
+              "group_index": 0,
+              "ranges": [
+                {
+                  "min": "0",
+                  "max": "1"
+                },
+                {
+                  "min": "1",
+                  "max": "3"
+                },
+                {
+                  "min": "3",
+                  "max": "5"
+                },
+                {
+                  "min": "5",
+                  "max": "7"
+                },
+                {
+                  "min": "7",
+                  "max": "-1"
+                }
+              ],
+              "name_mi18n_key": "detail-chart-time-range-normal"
+            },
+            {
+              "group_index": 1,
+              "ranges": [
+                {
+                  "min": "0",
+                  "max": "3"
+                },
+                {
+                  "min": "3",
+                  "max": "6"
+                },
+                {
+                  "min": "6",
+                  "max": "9"
+                },
+                {
+                  "min": "9",
+                  "max": "12"
+                },
+                {
+                  "min": "12",
+                  "max": "-1"
+                }
+              ],
+              "name_mi18n_key": "detail-chart-time-range-long"
+            },
+            {
+              "group_index": 2,
+              "ranges": [
+                {
+                  "min": "0",
+                  "max": "6"
+                },
+                {
+                  "min": "6",
+                  "max": "13"
+                },
+                {
+                  "min": "13",
+                  "max": "19"
+                },
+                {
+                  "min": "19",
+                  "max": "26"
+                },
+                {
+                  "min": "26",
+                  "max": "-1"
+                }
+              ],
+              "name_mi18n_key": "detail-chart-time-range-extra-long"
+            }
+          ],
+          "group_data": {
+            "0": {
+              "daily_items": [
+                {
+                  "date": "2026-09-27",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "1",
+                      "count": "1250",
+                      "percent": 1250
+                    },
+                    {
+                      "min": "1",
+                      "max": "3",
+                      "count": "6250",
+                      "percent": 6250
+                    },
+                    {
+                      "min": "3",
+                      "max": "5",
+                      "count": "1250",
+                      "percent": 1250
+                    },
+                    {
+                      "min": "5",
+                      "max": "7",
+                      "count": "625",
+                      "percent": 625
+                    },
+                    {
+                      "min": "7",
+                      "max": "-1",
+                      "count": "625",
+                      "percent": 625
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-09-28",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "1",
+                      "count": "2000",
+                      "percent": 2000
+                    },
+                    {
+                      "min": "1",
+                      "max": "3",
+                      "count": "3500",
+                      "percent": 3500
+                    },
+                    {
+                      "min": "3",
+                      "max": "5",
+                      "count": "1500",
+                      "percent": 1500
+                    },
+                    {
+                      "min": "5",
+                      "max": "7",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "7",
+                      "max": "-1",
+                      "count": "3000",
+                      "percent": 3000
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-09-29",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "1",
+                      "count": "833",
+                      "percent": 833
+                    },
+                    {
+                      "min": "1",
+                      "max": "3",
+                      "count": "5417",
+                      "percent": 5417
+                    },
+                    {
+                      "min": "3",
+                      "max": "5",
+                      "count": "833",
+                      "percent": 833
+                    },
+                    {
+                      "min": "5",
+                      "max": "7",
+                      "count": "1250",
+                      "percent": 1250
+                    },
+                    {
+                      "min": "7",
+                      "max": "-1",
+                      "count": "1667",
+                      "percent": 1667
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-09-30",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "1",
+                      "count": "2826",
+                      "percent": 2826
+                    },
+                    {
+                      "min": "1",
+                      "max": "3",
+                      "count": "4130",
+                      "percent": 4130
+                    },
+                    {
+                      "min": "3",
+                      "max": "5",
+                      "count": "1522",
+                      "percent": 1522
+                    },
+                    {
+                      "min": "5",
+                      "max": "7",
+                      "count": "435",
+                      "percent": 435
+                    },
+                    {
+                      "min": "7",
+                      "max": "-1",
+                      "count": "1087",
+                      "percent": 1087
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-01",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "1",
+                      "count": "2787",
+                      "percent": 2787
+                    },
+                    {
+                      "min": "1",
+                      "max": "3",
+                      "count": "4590",
+                      "percent": 4590
+                    },
+                    {
+                      "min": "3",
+                      "max": "5",
+                      "count": "820",
+                      "percent": 820
+                    },
+                    {
+                      "min": "5",
+                      "max": "7",
+                      "count": "820",
+                      "percent": 820
+                    },
+                    {
+                      "min": "7",
+                      "max": "-1",
+                      "count": "983",
+                      "percent": 983
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-02",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "1",
+                      "count": "1364",
+                      "percent": 1364
+                    },
+                    {
+                      "min": "1",
+                      "max": "3",
+                      "count": "5909",
+                      "percent": 5909
+                    },
+                    {
+                      "min": "3",
+                      "max": "5",
+                      "count": "682",
+                      "percent": 682
+                    },
+                    {
+                      "min": "5",
+                      "max": "7",
+                      "count": "909",
+                      "percent": 909
+                    },
+                    {
+                      "min": "7",
+                      "max": "-1",
+                      "count": "1136",
+                      "percent": 1136
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-03",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "1",
+                      "count": "2083",
+                      "percent": 2083
+                    },
+                    {
+                      "min": "1",
+                      "max": "3",
+                      "count": "5417",
+                      "percent": 5417
+                    },
+                    {
+                      "min": "3",
+                      "max": "5",
+                      "count": "833",
+                      "percent": 833
+                    },
+                    {
+                      "min": "5",
+                      "max": "7",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "7",
+                      "max": "-1",
+                      "count": "1667",
+                      "percent": 1667
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-04",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "1",
+                      "count": "1250",
+                      "percent": 1250
+                    },
+                    {
+                      "min": "1",
+                      "max": "3",
+                      "count": "5000",
+                      "percent": 5000
+                    },
+                    {
+                      "min": "3",
+                      "max": "5",
+                      "count": "417",
+                      "percent": 417
+                    },
+                    {
+                      "min": "5",
+                      "max": "7",
+                      "count": "1250",
+                      "percent": 1250
+                    },
+                    {
+                      "min": "7",
+                      "max": "-1",
+                      "count": "2083",
+                      "percent": 2083
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-05",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "1",
+                      "count": "1304",
+                      "percent": 1304
+                    },
+                    {
+                      "min": "1",
+                      "max": "3",
+                      "count": "6087",
+                      "percent": 6087
+                    },
+                    {
+                      "min": "3",
+                      "max": "5",
+                      "count": "2174",
+                      "percent": 2174
+                    },
+                    {
+                      "min": "5",
+                      "max": "7",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "7",
+                      "max": "-1",
+                      "count": "435",
+                      "percent": 435
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-06",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "1",
+                      "count": "2667",
+                      "percent": 2667
+                    },
+                    {
+                      "min": "1",
+                      "max": "3",
+                      "count": "6333",
+                      "percent": 6333
+                    },
+                    {
+                      "min": "3",
+                      "max": "5",
+                      "count": "667",
+                      "percent": 667
+                    },
+                    {
+                      "min": "5",
+                      "max": "7",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "7",
+                      "max": "-1",
+                      "count": "333",
+                      "percent": 333
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-07",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "1",
+                      "count": "2500",
+                      "percent": 2500
+                    },
+                    {
+                      "min": "1",
+                      "max": "3",
+                      "count": "4500",
+                      "percent": 4500
+                    },
+                    {
+                      "min": "3",
+                      "max": "5",
+                      "count": "1500",
+                      "percent": 1500
+                    },
+                    {
+                      "min": "5",
+                      "max": "7",
+                      "count": "500",
+                      "percent": 500
+                    },
+                    {
+                      "min": "7",
+                      "max": "-1",
+                      "count": "1000",
+                      "percent": 1000
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-08",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "1",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "1",
+                      "max": "3",
+                      "count": "10000",
+                      "percent": 10000
+                    },
+                    {
+                      "min": "3",
+                      "max": "5",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "5",
+                      "max": "7",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "7",
+                      "max": "-1",
+                      "count": "0",
+                      "percent": 0
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-09",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "1",
+                      "count": "5000",
+                      "percent": 5000
+                    },
+                    {
+                      "min": "1",
+                      "max": "3",
+                      "count": "5000",
+                      "percent": 5000
+                    },
+                    {
+                      "min": "3",
+                      "max": "5",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "5",
+                      "max": "7",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "7",
+                      "max": "-1",
+                      "count": "0",
+                      "percent": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            "1": {
+              "daily_items": [
+                {
+                  "date": "2026-09-27",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "3",
+                      "count": "7500",
+                      "percent": 7500
+                    },
+                    {
+                      "min": "3",
+                      "max": "6",
+                      "count": "1875",
+                      "percent": 1875
+                    },
+                    {
+                      "min": "6",
+                      "max": "9",
+                      "count": "625",
+                      "percent": 625
+                    },
+                    {
+                      "min": "9",
+                      "max": "12",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "12",
+                      "max": "-1",
+                      "count": "0",
+                      "percent": 0
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-09-28",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "3",
+                      "count": "5500",
+                      "percent": 5500
+                    },
+                    {
+                      "min": "3",
+                      "max": "6",
+                      "count": "1500",
+                      "percent": 1500
+                    },
+                    {
+                      "min": "6",
+                      "max": "9",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "9",
+                      "max": "12",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "12",
+                      "max": "-1",
+                      "count": "3000",
+                      "percent": 3000
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-09-29",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "3",
+                      "count": "6250",
+                      "percent": 6250
+                    },
+                    {
+                      "min": "3",
+                      "max": "6",
+                      "count": "1250",
+                      "percent": 1250
+                    },
+                    {
+                      "min": "6",
+                      "max": "9",
+                      "count": "833",
+                      "percent": 833
+                    },
+                    {
+                      "min": "9",
+                      "max": "12",
+                      "count": "417",
+                      "percent": 417
+                    },
+                    {
+                      "min": "12",
+                      "max": "-1",
+                      "count": "1250",
+                      "percent": 1250
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-09-30",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "3",
+                      "count": "6957",
+                      "percent": 6957
+                    },
+                    {
+                      "min": "3",
+                      "max": "6",
+                      "count": "1739",
+                      "percent": 1739
+                    },
+                    {
+                      "min": "6",
+                      "max": "9",
+                      "count": "435",
+                      "percent": 435
+                    },
+                    {
+                      "min": "9",
+                      "max": "12",
+                      "count": "217",
+                      "percent": 217
+                    },
+                    {
+                      "min": "12",
+                      "max": "-1",
+                      "count": "652",
+                      "percent": 652
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-01",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "3",
+                      "count": "7377",
+                      "percent": 7377
+                    },
+                    {
+                      "min": "3",
+                      "max": "6",
+                      "count": "1639",
+                      "percent": 1639
+                    },
+                    {
+                      "min": "6",
+                      "max": "9",
+                      "count": "164",
+                      "percent": 164
+                    },
+                    {
+                      "min": "9",
+                      "max": "12",
+                      "count": "164",
+                      "percent": 164
+                    },
+                    {
+                      "min": "12",
+                      "max": "-1",
+                      "count": "656",
+                      "percent": 656
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-02",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "3",
+                      "count": "7273",
+                      "percent": 7273
+                    },
+                    {
+                      "min": "3",
+                      "max": "6",
+                      "count": "1136",
+                      "percent": 1136
+                    },
+                    {
+                      "min": "6",
+                      "max": "9",
+                      "count": "682",
+                      "percent": 682
+                    },
+                    {
+                      "min": "9",
+                      "max": "12",
+                      "count": "227",
+                      "percent": 227
+                    },
+                    {
+                      "min": "12",
+                      "max": "-1",
+                      "count": "682",
+                      "percent": 682
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-03",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "3",
+                      "count": "7500",
+                      "percent": 7500
+                    },
+                    {
+                      "min": "3",
+                      "max": "6",
+                      "count": "834",
+                      "percent": 834
+                    },
+                    {
+                      "min": "6",
+                      "max": "9",
+                      "count": "833",
+                      "percent": 833
+                    },
+                    {
+                      "min": "9",
+                      "max": "12",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "12",
+                      "max": "-1",
+                      "count": "833",
+                      "percent": 833
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-04",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "3",
+                      "count": "6250",
+                      "percent": 6250
+                    },
+                    {
+                      "min": "3",
+                      "max": "6",
+                      "count": "1667",
+                      "percent": 1667
+                    },
+                    {
+                      "min": "6",
+                      "max": "9",
+                      "count": "833",
+                      "percent": 833
+                    },
+                    {
+                      "min": "9",
+                      "max": "12",
+                      "count": "417",
+                      "percent": 417
+                    },
+                    {
+                      "min": "12",
+                      "max": "-1",
+                      "count": "833",
+                      "percent": 833
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-05",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "3",
+                      "count": "7391",
+                      "percent": 7391
+                    },
+                    {
+                      "min": "3",
+                      "max": "6",
+                      "count": "2174",
+                      "percent": 2174
+                    },
+                    {
+                      "min": "6",
+                      "max": "9",
+                      "count": "435",
+                      "percent": 435
+                    },
+                    {
+                      "min": "9",
+                      "max": "12",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "12",
+                      "max": "-1",
+                      "count": "0",
+                      "percent": 0
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-06",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "3",
+                      "count": "9000",
+                      "percent": 9000
+                    },
+                    {
+                      "min": "3",
+                      "max": "6",
+                      "count": "667",
+                      "percent": 667
+                    },
+                    {
+                      "min": "6",
+                      "max": "9",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "9",
+                      "max": "12",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "12",
+                      "max": "-1",
+                      "count": "333",
+                      "percent": 333
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-07",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "3",
+                      "count": "7000",
+                      "percent": 7000
+                    },
+                    {
+                      "min": "3",
+                      "max": "6",
+                      "count": "2000",
+                      "percent": 2000
+                    },
+                    {
+                      "min": "6",
+                      "max": "9",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "9",
+                      "max": "12",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "12",
+                      "max": "-1",
+                      "count": "1000",
+                      "percent": 1000
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-08",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "3",
+                      "count": "10000",
+                      "percent": 10000
+                    },
+                    {
+                      "min": "3",
+                      "max": "6",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "6",
+                      "max": "9",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "9",
+                      "max": "12",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "12",
+                      "max": "-1",
+                      "count": "0",
+                      "percent": 0
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-09",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "3",
+                      "count": "10000",
+                      "percent": 10000
+                    },
+                    {
+                      "min": "3",
+                      "max": "6",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "6",
+                      "max": "9",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "9",
+                      "max": "12",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "12",
+                      "max": "-1",
+                      "count": "0",
+                      "percent": 0
+                    }
+                  ]
+                }
+              ]
+            },
+            "2": {
+              "daily_items": [
+                {
+                  "date": "2026-09-27",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "6",
+                      "count": "9375",
+                      "percent": 9375
+                    },
+                    {
+                      "min": "6",
+                      "max": "13",
+                      "count": "625",
+                      "percent": 625
+                    },
+                    {
+                      "min": "13",
+                      "max": "19",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "19",
+                      "max": "26",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "26",
+                      "max": "-1",
+                      "count": "0",
+                      "percent": 0
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-09-28",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "6",
+                      "count": "7000",
+                      "percent": 7000
+                    },
+                    {
+                      "min": "6",
+                      "max": "13",
+                      "count": "500",
+                      "percent": 500
+                    },
+                    {
+                      "min": "13",
+                      "max": "19",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "19",
+                      "max": "26",
+                      "count": "500",
+                      "percent": 500
+                    },
+                    {
+                      "min": "26",
+                      "max": "-1",
+                      "count": "2000",
+                      "percent": 2000
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-09-29",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "6",
+                      "count": "7500",
+                      "percent": 7500
+                    },
+                    {
+                      "min": "6",
+                      "max": "13",
+                      "count": "1667",
+                      "percent": 1667
+                    },
+                    {
+                      "min": "13",
+                      "max": "19",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "19",
+                      "max": "26",
+                      "count": "417",
+                      "percent": 417
+                    },
+                    {
+                      "min": "26",
+                      "max": "-1",
+                      "count": "416",
+                      "percent": 416
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-09-30",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "6",
+                      "count": "8696",
+                      "percent": 8696
+                    },
+                    {
+                      "min": "6",
+                      "max": "13",
+                      "count": "1087",
+                      "percent": 1087
+                    },
+                    {
+                      "min": "13",
+                      "max": "19",
+                      "count": "217",
+                      "percent": 217
+                    },
+                    {
+                      "min": "19",
+                      "max": "26",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "26",
+                      "max": "-1",
+                      "count": "0",
+                      "percent": 0
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-01",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "6",
+                      "count": "9016",
+                      "percent": 9016
+                    },
+                    {
+                      "min": "6",
+                      "max": "13",
+                      "count": "328",
+                      "percent": 328
+                    },
+                    {
+                      "min": "13",
+                      "max": "19",
+                      "count": "492",
+                      "percent": 492
+                    },
+                    {
+                      "min": "19",
+                      "max": "26",
+                      "count": "164",
+                      "percent": 164
+                    },
+                    {
+                      "min": "26",
+                      "max": "-1",
+                      "count": "0",
+                      "percent": 0
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-02",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "6",
+                      "count": "8409",
+                      "percent": 8409
+                    },
+                    {
+                      "min": "6",
+                      "max": "13",
+                      "count": "909",
+                      "percent": 909
+                    },
+                    {
+                      "min": "13",
+                      "max": "19",
+                      "count": "228",
+                      "percent": 228
+                    },
+                    {
+                      "min": "19",
+                      "max": "26",
+                      "count": "227",
+                      "percent": 227
+                    },
+                    {
+                      "min": "26",
+                      "max": "-1",
+                      "count": "227",
+                      "percent": 227
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-03",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "6",
+                      "count": "8334",
+                      "percent": 8334
+                    },
+                    {
+                      "min": "6",
+                      "max": "13",
+                      "count": "833",
+                      "percent": 833
+                    },
+                    {
+                      "min": "13",
+                      "max": "19",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "19",
+                      "max": "26",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "26",
+                      "max": "-1",
+                      "count": "833",
+                      "percent": 833
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-04",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "6",
+                      "count": "7917",
+                      "percent": 7917
+                    },
+                    {
+                      "min": "6",
+                      "max": "13",
+                      "count": "1250",
+                      "percent": 1250
+                    },
+                    {
+                      "min": "13",
+                      "max": "19",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "19",
+                      "max": "26",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "26",
+                      "max": "-1",
+                      "count": "833",
+                      "percent": 833
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-05",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "6",
+                      "count": "9565",
+                      "percent": 9565
+                    },
+                    {
+                      "min": "6",
+                      "max": "13",
+                      "count": "435",
+                      "percent": 435
+                    },
+                    {
+                      "min": "13",
+                      "max": "19",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "19",
+                      "max": "26",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "26",
+                      "max": "-1",
+                      "count": "0",
+                      "percent": 0
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-06",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "6",
+                      "count": "9667",
+                      "percent": 9667
+                    },
+                    {
+                      "min": "6",
+                      "max": "13",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "13",
+                      "max": "19",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "19",
+                      "max": "26",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "26",
+                      "max": "-1",
+                      "count": "333",
+                      "percent": 333
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-07",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "6",
+                      "count": "9000",
+                      "percent": 9000
+                    },
+                    {
+                      "min": "6",
+                      "max": "13",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "13",
+                      "max": "19",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "19",
+                      "max": "26",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "26",
+                      "max": "-1",
+                      "count": "1000",
+                      "percent": 1000
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-08",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "6",
+                      "count": "10000",
+                      "percent": 10000
+                    },
+                    {
+                      "min": "6",
+                      "max": "13",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "13",
+                      "max": "19",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "19",
+                      "max": "26",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "26",
+                      "max": "-1",
+                      "count": "0",
+                      "percent": 0
+                    }
+                  ]
+                },
+                {
+                  "date": "2026-10-09",
+                  "buckets": [
+                    {
+                      "min": "0",
+                      "max": "6",
+                      "count": "10000",
+                      "percent": 10000
+                    },
+                    {
+                      "min": "6",
+                      "max": "13",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "13",
+                      "max": "19",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "19",
+                      "max": "26",
+                      "count": "0",
+                      "percent": 0
+                    },
+                    {
+                      "min": "26",
+                      "max": "-1",
+                      "count": "0",
+                      "percent": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "recommended_group_index": 0
+        }
+      },
+      {
+        "metric_type": "METRIC_STAGE_TYPE_GOOD_RATE",
+        "delta_7_day": "0",
+        "delta_7_day_invalid": true,
+        "delta_30_day": "0",
+        "delta_30_day_invalid": true,
+        "daily_info": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "daily_stats": [
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-10",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-11",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-12",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-13",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-14",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-15",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-16",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-17",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-18",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-19",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-20",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-21",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-22",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-23",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-24",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-25",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-26",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-27",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-28",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-29",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-30",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-10-01",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-10-02",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-10-03",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-10-04",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-10-05",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-10-06",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-10-07",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-10-08",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-10-09",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          }
+        ],
+        "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+        "calculate_type": "METRIC_CALCULATE_TYPE_ROUND",
+        "normalized_info_7d": [],
+        "normalized_stats_7d": [],
+        "multi_group_dist": null
+      },
+      {
+        "metric_type": "METRIC_STAGE_TYPE_REVIEW_TOTAL",
+        "delta_7_day": "0",
+        "delta_7_day_invalid": false,
+        "delta_30_day": "5",
+        "delta_30_day_invalid": true,
+        "daily_info": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1",
+          "3",
+          "4",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5",
+          "5"
+        ],
+        "daily_stats": [
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-10",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-11",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-12",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-13",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-14",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-15",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-16",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-17",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-18",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-19",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-20",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-21",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-22",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-23",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-24",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-25",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-26",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "1",
+            "delta": "1",
+            "date": "2026-09-27",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "3",
+            "delta": "2",
+            "date": "2026-09-28",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "4",
+            "delta": "1",
+            "date": "2026-09-29",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5",
+            "delta": "1",
+            "date": "2026-09-30",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5",
+            "delta": "0",
+            "date": "2026-10-01",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5",
+            "delta": "0",
+            "date": "2026-10-02",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5",
+            "delta": "0",
+            "date": "2026-10-03",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5",
+            "delta": "0",
+            "date": "2026-10-04",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5",
+            "delta": "0",
+            "date": "2026-10-05",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5",
+            "delta": "0",
+            "date": "2026-10-06",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5",
+            "delta": "0",
+            "date": "2026-10-07",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5",
+            "delta": "0",
+            "date": "2026-10-08",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          },
+          {
+            "cur": "5",
+            "delta": "0",
+            "date": "2026-10-09",
+            "value_type": "METRIC_VALUE_TYPE_NORMAL",
+            "cur_invalid": false
+          }
+        ],
+        "value_type": "METRIC_VALUE_TYPE_NORMAL",
+        "calculate_type": "METRIC_CALCULATE_TYPE_FLOOR",
+        "normalized_info_7d": [],
+        "normalized_stats_7d": [],
+        "multi_group_dist": null
+      },
+      {
+        "metric_type": "METRIC_STAGE_TYPE_COVER_CLICK_RATE",
+        "delta_7_day": "218",
+        "delta_7_day_invalid": false,
+        "delta_30_day": "259",
+        "delta_30_day_invalid": true,
+        "daily_info": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "47",
+          "41",
+          "26",
+          "16",
+          "15",
+          "41",
+          "167",
+          "223",
+          "336",
+          "241",
+          "294",
+          "259"
+        ],
+        "daily_stats": [
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-10",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-11",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-12",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-13",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-14",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-15",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-16",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-17",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-18",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-19",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-20",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-21",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-22",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-23",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-24",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-25",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-26",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "0",
+            "delta": "0",
+            "date": "2026-09-27",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": true
+          },
+          {
+            "cur": "47",
+            "delta": "47",
+            "date": "2026-09-28",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "41",
+            "delta": "-6",
+            "date": "2026-09-29",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "26",
+            "delta": "-15",
+            "date": "2026-09-30",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "16",
+            "delta": "-10",
+            "date": "2026-10-01",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "15",
+            "delta": "-1",
+            "date": "2026-10-02",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "41",
+            "delta": "26",
+            "date": "2026-10-03",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "167",
+            "delta": "126",
+            "date": "2026-10-04",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "223",
+            "delta": "56",
+            "date": "2026-10-05",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "336",
+            "delta": "113",
+            "date": "2026-10-06",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "241",
+            "delta": "-95",
+            "date": "2026-10-07",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "294",
+            "delta": "53",
+            "date": "2026-10-08",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          },
+          {
+            "cur": "259",
+            "delta": "-35",
+            "date": "2026-10-09",
+            "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+            "cur_invalid": false
+          }
+        ],
+        "value_type": "METRIC_VALUE_TYPE_PER_TEN_THOUSAND",
+        "calculate_type": "METRIC_CALCULATE_TYPE_ROUND",
+        "normalized_info_7d": [],
+        "normalized_stats_7d": [],
+        "multi_group_dist": null
+      }
+    ],
+    "comment_module_info": {
+      "total_comment_num": "5",
+      "comment_list": [
+        {
+          "comment_id": "2104538372612648960",
+          "stage_id": "54461776301",
+          "uid": "200000002",
+          "nickname": "用户A",
+          "avatar": "https://example.invalid/static-resource-v2/2025/10/11/9af264338c53b222754ed72b8a5190d7_7273255220510621943.png",
+          "is_recommend": false,
+          "content": "示例评论：整体完成度较高，结算界面还可以再打磨一下。",
+          "is_owner": false,
+          "comment_unix": 1790596023,
+          "floor": 2,
+          "like_num": "0",
+          "reply_num": "1"
+        },
+        {
+          "comment_id": "2105272970925719552",
+          "stage_id": "54461776301",
+          "uid": "200000001",
+          "nickname": "用户B",
+          "avatar": "https://example.invalid/static-resource-v2/2025/10/11/9af264338c53b222754ed72b8a5190d7_7273255220510621943.png",
+          "is_recommend": true,
+          "content": "示例评论：整体完成度较高，结算界面还可以再打磨一下。",
+          "is_owner": true,
+          "comment_unix": 1790771165,
+          "floor": 5,
+          "like_num": "0",
+          "reply_num": "0"
+        },
+        {
+          "comment_id": "2104903395667308544",
+          "stage_id": "54461776301",
+          "uid": "200000005",
+          "nickname": "用户C",
+          "avatar": "https://example.invalid/70ba3aa04e3da7ff3d345ce8060ae99919110a503cbce06cee762fb10ae0cc95_i_12",
+          "is_recommend": true,
+          "content": "示例评论：前半段节奏很好，中段难度略高，建议优化引导。",
+          "is_owner": false,
+          "comment_unix": 1790683051,
+          "floor": 4,
+          "like_num": "0",
+          "reply_num": "0"
+        },
+        {
+          "comment_id": "2104561153991602176",
+          "stage_id": "54461776301",
+          "uid": "200000007",
+          "nickname": "用户D",
+          "avatar": "https://example.invalid/static-resource-v2/2025/10/11/9af264338c53b222754ed72b8a5190d7_7273255220510621943.png",
+          "is_recommend": true,
+          "content": "示例评论：整体完成度较高，结算界面还可以再打磨一下。",
+          "is_owner": false,
+          "comment_unix": 1790601455,
+          "floor": 3,
+          "like_num": "0",
+          "reply_num": "0"
+        },
+        {
+          "comment_id": "2104215089719767040",
+          "stage_id": "54461776301",
+          "uid": "200000009",
+          "nickname": "用户E",
+          "avatar": "https://example.invalid/01c538fe3e5a50f1224902193b3cf038989b15770786fecd116d970f7711a41d_i_8",
+          "is_recommend": true,
+          "content": "示例评论：前半段节奏很好，中段难度略高，建议优化引导。",
+          "is_owner": false,
+          "comment_unix": 1790518946,
+          "floor": 1,
+          "like_num": "0",
+          "reply_num": "0"
+        }
+      ]
+    },
+    "metric_groups": [
+      {
+        "group_type": "STAGE_METRIC_GROUP_TYPE_PLAY",
+        "metric_types": [
+          "METRIC_STAGE_TYPE_STAGE_HOT_SCORE",
+          "METRIC_STAGE_TYPE_AVG_TIME"
+        ]
+      },
+      {
+        "group_type": "STAGE_METRIC_GROUP_TYPE_ACTIVE",
+        "metric_types": [
+          "METRIC_STAGE_TYPE_ACTIVE_SCORE",
+          "METRIC_STAGE_TYPE_LAST_VERSION_ACTIVE_SCORE"
+        ]
+      },
+      {
+        "group_type": "STAGE_METRIC_GROUP_TYPE_INTERACTION",
+        "metric_types": [
+          "METRIC_STAGE_TYPE_GOOD_RATE",
+          "METRIC_STAGE_TYPE_REVIEW_TOTAL",
+          "METRIC_STAGE_TYPE_COVER_CLICK_RATE"
+        ]
+      }
+    ]
+  }
+}

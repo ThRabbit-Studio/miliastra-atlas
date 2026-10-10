@@ -1,0 +1,9 @@
+# 默认仓库内统一用 LF（Windows 检出仍按系统习惯处理）
+* text=auto eol=lf
+*.png binary
+*.xlsx binary
+*.crx binary
+*.pem binary
+
+# 测试用的真实接口固定数据：按文本处理，避免 diff 噪音
+test/fixture/api/*.json text eol=lf
