@@ -1,5 +1,8 @@
 # Miliastra Atlas
 
+[![Release](https://img.shields.io/github/v/release/ThRabbit-Studio/miliastra-atlas?label=release)](https://github.com/ThRabbit-Studio/miliastra-atlas/releases/latest)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 **English name: `miliastra-atlas`** · 奇域数据导出器
 
 > Export [Miliastra Wonderland](https://act.mihoyo.com/miliastra_wonderland/developer) (千星奇域) creator-center data into clean, analysis-ready Excel workbooks — one sheet per topic, Chinese headers, no debug noise.
@@ -10,6 +13,8 @@
 - **分类分工作表**：趋势、分布、评论、指标汇总各自成表，表头全中文
 - **只导有意义的数据**：导航文字、接口原始字段（`cur`/`delta`/`value_type`）、调试信息一律不进表格
 - 需要你的**创作者中心登录态**（扩展用浏览器里的登录态直接调接口）
+
+**直接下载安装包**：[miliastra-atlas-v1.1.0.zip](https://github.com/ThRabbit-Studio/miliastra-atlas/releases/download/v1.1.0/miliastra-atlas-v1.1.0.zip)（55.6 KB，解压后按下方第 1 节加载；用法与常见问题见 [Release 说明](https://github.com/ThRabbit-Studio/miliastra-atlas/releases/tag/v1.1.0)）
 
 ---
 
@@ -26,11 +31,21 @@ npm test               # 单元测试 + 真实浏览器 E2E
 
 ## 1. 安装
 
-1. 打开 `chrome://extensions`（Edge：`edge://extensions`）→ 开启右上角 **开发者模式**
-2. 点 **加载已解压的扩展程序**，选择本仓库的 `extension` 文件夹
-   （或解压 `dist/miliastra-atlas-v1.1.0.zip` 后加载）
-3. 打开 [千星奇域创作者中心](https://act.mihoyo.com/miliastra_wonderland/developer?mhy_presentation_style=fullscreen&mhy_auth_required=true) 并**登录**
-4. 页面右下角出现蓝色「导出奇域数据」按钮；也可点工具栏扩展图标
+**方式 A：下载 Release 安装包（推荐给使用者）**
+
+1. 下载 [miliastra-atlas-v1.1.0.zip](https://github.com/ThRabbit-Studio/miliastra-atlas/releases/download/v1.1.0/miliastra-atlas-v1.1.0.zip) 并解压到**固定目录**（例如 `D:\miliastra-atlas`，装了之后别删，Chrome 会一直引用它）
+2. 打开 `chrome://extensions`（Edge：`edge://extensions`）→ 开启右上角 **开发者模式**
+3. 点 **加载已解压的扩展程序**，选择解压出来的目录（含 `manifest.json` 的那一层）
+
+**方式 B：从源码加载（推荐给开发者）**
+
+1. `git clone https://github.com/ThRabbit-Studio/miliastra-atlas.git`
+2. 打开 `chrome://extensions` → 开启 **开发者模式**
+3. 点 **加载已解压的扩展程序**，选择仓库里的 `extension` 文件夹
+
+> 两种方式装的是同一个扩展；源码方式改完代码点一下重新加载即可，不需要构建。
+
+**加载完成后**：打开 [千星奇域创作者中心](https://act.mihoyo.com/miliastra_wonderland/developer?mhy_presentation_style=fullscreen&mhy_auth_required=true) 并**登录**，页面右下角就会出现蓝色「导出奇域数据」按钮（也可点工具栏扩展图标）。
 
 > 装扩展前就开着的页面不用手动刷新：点扩展图标会自动注入脚本。
 
